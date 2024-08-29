@@ -1,0 +1,56 @@
+2024-08-29 08:55:40,542 DEBUG cd frappe-bench && python3 -m venv env
+2024-08-29 08:55:43,554 DEBUG cd frappe-bench && /home/meghabothe/python/frappe/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-08-29 08:55:45,075 DEBUG cd frappe-bench && /home/meghabothe/python/frappe/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-08-29 08:55:45,952 LOG Getting frappe
+2024-08-29 08:55:45,952 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-08-29 08:55:57,643 LOG Installing frappe
+2024-08-29 08:55:57,644 DEBUG cd /home/meghabothe/python/frappe/frappe-bench && /home/meghabothe/python/frappe/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/meghabothe/python/frappe/frappe-bench/apps/frappe 
+2024-08-29 08:56:37,455 DEBUG cd /home/meghabothe/python/frappe/frappe-bench/apps/frappe && yarn install --check-files
+2024-08-29 08:56:43,025 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-29 08:56:43,026 DEBUG cd frappe-bench && bench build
+2024-08-29 08:56:43,154 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench build
+2024-08-29 08:57:03,467 LOG setting up backups
+2024-08-29 08:57:03,473 LOG backups were set up
+2024-08-29 08:57:03,473 INFO Bench frappe-bench initialized
+2024-08-29 08:58:06,177 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench start
+2024-08-29 08:59:03,745 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench start
+2024-08-29 09:01:23,912 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench start
+2024-08-29 09:03:29,274 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench start
+2024-08-29 09:03:49,949 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench stop
+2024-08-29 09:03:59,244 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench restart
+2024-08-29 09:03:59,249 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-29 09:04:05,178 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench start
+2024-08-29 09:04:24,146 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench start
+2024-08-29 09:06:39,647 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench stop
+2024-08-29 09:06:43,823 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench start
+2024-08-29 09:06:44,054 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench watch
+2024-08-29 09:06:44,054 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench schedule
+2024-08-29 09:06:44,057 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench worker
+2024-08-29 09:06:44,107 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench serve --port 8000
+2024-08-29 09:10:24,856 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench new-app apps
+2024-08-29 09:10:24,860 LOG creating new app apps
+2024-08-29 09:10:59,836 WARNING /home/meghabothe/python/frappe/frappe-env/bin/bench new-app apps executed with exit code 1
+2024-08-29 09:11:37,720 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench new-app appointments_app
+2024-08-29 09:11:37,723 LOG creating new app appointments_app
+2024-08-29 09:12:49,426 LOG Installing appointments_app
+2024-08-29 09:12:49,426 DEBUG cd /home/meghabothe/python/frappe/frappe-bench && /home/meghabothe/python/frappe/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/meghabothe/python/frappe/frappe-bench/apps/appointments_app 
+2024-08-29 09:12:51,528 DEBUG bench build --app appointments_app
+2024-08-29 09:12:51,695 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench build --app appointments_app
+2024-08-29 09:12:53,483 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-08-29 09:13:44,771 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench new-site appointments.local
+2024-08-29 09:16:22,459 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench --site appointments.local install-app appointments_app
+2024-08-29 09:18:36,580 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench browse appointments.local --user Administrator
+2024-08-29 09:18:57,478 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench --site library.localhost add-to-hosts
+2024-08-29 09:19:03,347 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench browse appointments.local --user Administrator
+2024-08-29 09:19:24,078 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench start
+2024-08-29 09:19:24,316 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench watch
+2024-08-29 09:19:24,324 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench schedule
+2024-08-29 09:19:24,359 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench serve --port 8000
+2024-08-29 09:19:24,367 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench worker
+2024-08-29 09:19:30,543 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench browse appointments.local --user Administrator
+2024-08-29 12:20:07,390 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench start
+2024-08-29 12:20:07,688 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench worker
+2024-08-29 12:20:07,694 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench watch
+2024-08-29 12:20:07,706 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench schedule
+2024-08-29 12:20:07,712 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench serve --port 8000
+2024-08-29 12:21:12,048 INFO /home/meghabothe/python/frappe/frappe-env/bin/bench browse appointments.local --user Administrator
